@@ -5,7 +5,29 @@ This is the public marketing site for MedBrand and the EmpowerMed 45-day acceler
 ## What is here
 
 - `index.html` — the whole site (HTML, CSS, and a small script in one file)
+- `assets/` — the brand images derived from the two supplied logo files
+- `site.webmanifest` — name, theme colour and app icons for "Add to home screen"
 - `.nojekyll` — tells GitHub Pages to serve the files as-is
+
+## Logo assets
+
+Both supplied logos are used, each in the role it suits. Only web-sized derivatives live here — the original files are not published.
+
+| File | Size | Where it is used |
+| --- | --- | --- |
+| `assets/medbrand-lockup.png` | 196×44 | Header and footer wordmark (icon + "MedBrand") |
+| `assets/medbrand-mark.png` | 42×44 | Hero insight card; favicons are derived from it |
+| `assets/medbrand-seal.png` | 512×512 | About-section quote card; social share image |
+| `assets/favicon-16/32/48.png` | 16–48 | Browser tab icons |
+| `assets/apple-touch-icon.png` | 180×180 | iOS home-screen icon |
+| `assets/icon-192.png`, `icon-512.png` | 192 / 512 | Android and PWA manifest icons |
+| `assets/og-image.png` | 1200×630 | Open Graph and Twitter card preview |
+
+Notes:
+
+- The horizontal lockup was cropped to remove a dark edge strip from the screenshot and made transparent; the enclosed white letter counters are kept solid, so it is only placed on light backgrounds (hence the white chip behind it in the dark footer).
+- The square file is a navy circular seal on a grey gradient with a faint watermark in one corner. The seal is cropped to the disc, so the watermark is outside the visible area.
+- Keep the HTML `width`/`height` attributes in step with the real pixel sizes if any of these files are regenerated.
 
 ## Lead paths
 
